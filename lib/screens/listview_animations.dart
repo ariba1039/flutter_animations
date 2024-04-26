@@ -39,8 +39,7 @@ class _ListViewAnimationsState extends State<ListViewAnimations> {
                   color: Colors.white,
                   fontSize: 25,
                 ),
-              ),
-            ),
+              ),            ),
             const SizedBox(height: 20),
             ListView.builder(
                 physics: const BouncingScrollPhysics(),
