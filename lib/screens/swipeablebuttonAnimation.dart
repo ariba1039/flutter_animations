@@ -69,7 +69,7 @@ class CompletedScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              'Payment Completed',
+              'Swipable button Animation ',
               style: TextStyle(
                 fontSize: 25,
                 fontWeight: FontWeight.bold,
