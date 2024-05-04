@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
@@ -29,35 +27,33 @@ class _LottieAnimationsState extends State<LottieAnimations>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 42, 28, 59) ,
+      backgroundColor: const Color.fromARGB(255, 42, 28, 59),
       body: buildUI(),
-      
     );
   }
+
   buildUI() {
-  return Stack(
-    children: [
-      Center(
-          child: Lottie.asset(
-        'assets/animations/travel_animation.json',
-        repeat: true,
-        width: 250,
-        height: 250,
-      )),
-      // Lottie.asset(
-      //   'assets/animations/plane_animation.json',
-      //   controller: _controller,
-      //   width: 500,
-      //   //MediaQuery.of(context).size.width,
-      //   height: 500,
+    return Stack(
+      children: [
+        Center(
+            child: Lottie.asset(
+          'assets/animations/travel_animation.json',
+          repeat: true,
+          width: 250,
+          height: 250,
+        )),
+        // Lottie.asset(
+        //   'assets/animations/plane_animation.json',
+        //   controller: _controller,
+        //   width: 500,
+        //   //MediaQuery.of(context).size.width,
+        //   height: 500,
 
-      //   // MediaQuery.of(context).size.height,
-      //   fit: BoxFit.cover,
-      //   repeat: false,
-      // )
-    ],
-  );
+        //   // MediaQuery.of(context).size.height,
+        //   fit: BoxFit.cover,
+        //   repeat: false,
+        // )
+      ],
+    );
+  }
 }
-}
-
-
